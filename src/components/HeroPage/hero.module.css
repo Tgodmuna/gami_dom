@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider {
+      @apply h-[1rem] w-[1rem] p-1 bg-yellow-600 rounded-full shadow-sm shadow-gray-200;
+}
+
+.angle_Right,
+.angle_Left {
+      @apply hover:bg-black text-slate-200 shadow-sm shadow-black hover:shadow-white text-[62px] hover:text-yellow-600 z-40 absolute top-[18rem] hidden md:block cursor-pointer;
+}
+.angle_Left {
+      @apply left-[-15px];
+}
+.angle_Right {
+      @apply right-[-13px];
+}
+
+.active {
+      @apply bg-slate-100 border-yellow-600 p-1 border-dotted transition-all duration-700  border-black;
+}
+
+
+.translate{
+      transform: translateX(-100%);
+      transition: all;
+      transition-duration: 500ms; 
+      opacity: 0.4;     
+}
